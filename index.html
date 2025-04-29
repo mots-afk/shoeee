@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShoeCed it? - Step Up Your Style</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      transition: 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .btn-warning {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header {
+      background: url('BG.jpg') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Homepage -->
+<header class="d-flex align-items-center justify-content-center text-center">
+  <div class="container animate__animated animate__fadeIn">
+    <img src="logo.png" alt="ShoeCed it? Logo" style="height: 220px;">
+    <h1 class="display-1 fw-bold">ShoeCed it?</h1>
+    <p class="lead fs-3">Step up your style. One pair at a time.</p>
+    <a href="#products" class="btn btn-warning btn-lg mt-4 animate__animated animate__pulse animate__infinite">Shop Now</a>
+  </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">ShoeCed it?</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="#cart" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="#checkout" class="nav-link">Checkout</a></li>
+        <li class="nav-item"><a href="#account" class="nav-link">My Account</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Products -->
+<section id="products" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">New Arrivals</h2>
+    <div class="row g-4">
+      
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="shoe1.jpg" class="card-img-top" alt="Sneaker Elite">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sneaker Elite</h5>
+            <p class="card-text">₱3,499</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="shoe2.jpg" class="card-img-top" alt="Urban Runner">
+          <div class="card-body text-center">
+            <h5 class="card-title">Urban Runner</h5>
+            <p class="card-text">₱2,899</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="shoe3.jpg" class="card-img-top" alt="FlexKicks Pro">
+          <div class="card-body text-center">
+            <h5 class="card-title">FlexKicks Pro</h5>
+            <p class="card-text">₱4,299</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Cart -->
+<section id="cart" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Your Cart</h2>
+    <table class="table">
+      <thead><tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th></tr></thead>
+      <tbody>
+        <tr><td>Sneaker Elite</td><td>₱3,499</td><td>1</td><td>₱3,499</td></tr>
+      </tbody>
+    </table>
+    <div class="text-end"><h4>Total: ₱3,499</h4></div>
+  </div>
+</section>
+
+<!-- Checkout -->
+<section id="checkout" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Checkout</h2>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Shipping Info</h5>
+          <input class="form-control mb-2" placeholder="Your Full Name">
+          <input class="form-control mb-2" placeholder="Complete Address">
+        </div>
+        <div class="col-md-6">
+          <h5>Billing Info</h5>
+          <input class="form-control mb-2" placeholder="Card Number">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- My Account -->
+<section id="account" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">My Account</h2>
+    <p>Name: Cedrick S. Alejo<br>Email: Cedcedrick6@gmail.com</p>
+    <h5 class="mt-4">Order History</h5>
+    <ul><li>Sneaker Elite - Delivered</li></ul>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Contact Us</h2>
+    <form>
+      <input class="form-control mb-2" placeholder="Your Name">
+      <input class="form-control mb-2" placeholder="Your Email">
+      <textarea class="form-control mb-2" placeholder="Type your message here..."></textarea>
+      <button class="btn btn-dark">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">How long is delivery?</button></h2>
+        <div id="faq1" class="accordion-collapse collapse show"><div class="accordion-body">Delivery takes around 3–5 business days nationwide.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">What is your return policy?</button></h2>
+        <div id="faq2" class="accordion-collapse collapse"><div class="accordion-body">We accept returns within 7 days as long as items are unused and in original packaging.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Customer Feedback</h2>
+    <p><strong>Jane S.</strong>: ⭐⭐⭐⭐⭐ - The shoes fit perfectly and feel super comfy!</p>
+    <p><strong>Mark R.</strong>: ⭐⭐⭐⭐ - Lightweight and trendy. Will buy again.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-0">© 2025 ShoeCed it? - Designed by Cedrick S. Alejo. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
